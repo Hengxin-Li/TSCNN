@@ -92,9 +92,8 @@ Download the TSCNN first. The following shows the basic folder structure.
 
 ## Train
 
-1. Follow the scripts to train.
+1. Cd to './code', run the following scripts to train models.
 
-    1. Cd to './code'
     ```bash
     # Scale 2,3,4
     #-------------TSCNN_L_x2 
