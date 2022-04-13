@@ -97,17 +97,17 @@ Download the TSCNN first. The following shows the basic folder structure.
     ```bash
     # Scale 2,3,4
     #-------------TSCNN_L_x2 
-    --s_model TSCNN.RDSRN  --RDNconfig A --n_patch_size 96  --s_train_dataset div2k.DIV2K --s_eval_dataset mcm.Mcm+kodak.Kodak
+    python main.py --s_model TSCNN.RDSRN  --RDNconfig A --n_patch_size 96  --s_train_dataset div2k.DIV2K --s_eval_dataset mcm.Mcm+kodak.Kodak
     #-------------TSCNN_L_x3 
-    --s_model TSCNN.RDSRN  --RDNconfig A --n_patch_size 144 --s_train_dataset div2k.DIV2K --s_eval_dataset mcm.Mcm+kodak.Kodak
+    python main.py --s_model TSCNN.RDSRN  --RDNconfig A --n_patch_size 144 --s_train_dataset div2k.DIV2K --s_eval_dataset mcm.Mcm+kodak.Kodak
     #-------------TSCNN_L_x4 
-    --s_model TSCNN.RDSRN  --RDNconfig A --n_patch_size 192 --s_train_dataset div2k.DIV2K --s_eval_dataset mcm.Mcm+kodak.Kodak
+    python main.py --s_model TSCNN.RDSRN  --RDNconfig A --n_patch_size 192 --s_train_dataset div2k.DIV2K --s_eval_dataset mcm.Mcm+kodak.Kodak
     #-------------TSCNN_H_x2 
-    --s_model TSCNN.RDSRN  --RDNconfig B --n_patch_size 96  --s_train_dataset div2k.DIV2K --s_eval_dataset mcm.Mcm+kodak.Kodak
+    python main.py --s_model TSCNN.RDSRN  --RDNconfig B --n_patch_size 96  --s_train_dataset div2k.DIV2K --s_eval_dataset mcm.Mcm+kodak.Kodak
     #-------------TSCNN_H_x3
-    --s_model TSCNN.RDSRN  --RDNconfig B --n_patch_size 144 --s_train_dataset div2k.DIV2K --s_eval_dataset mcm.Mcm+kodak.Kodak
+    python main.py --s_model TSCNN.RDSRN  --RDNconfig B --n_patch_size 144 --s_train_dataset div2k.DIV2K --s_eval_dataset mcm.Mcm+kodak.Kodak
     #-------------TSCNN_H_x4
-    --s_model TSCNN.RDSRN  --RDNconfig B --n_patch_size 192 --s_train_dataset div2k.DIV2K --s_eval_dataset mcm.Mcm+kodak.Kodak
+    python main.py --s_model TSCNN.RDSRN  --RDNconfig B --n_patch_size 192 --s_train_dataset div2k.DIV2K --s_eval_dataset mcm.Mcm+kodak.Kodak
 
     ```
      
@@ -122,17 +122,17 @@ Download the TSCNN first. The following shows the basic folder structure.
     ```bash
     # Scale 2,3,4
     #-------------TSCNN_L_x2 
-    --s_model TSCNN.RDSRN  --RDNconfig A --n_patch_size 96   --pre_train TSCNN_Lx2.pth --b_test_only True --s_train_dataset div2k.DIV2K --s_eval_dataset mcm.Mcm+kodak.Kodak
+    python main.py --s_model TSCNN.RDSRN  --RDNconfig A --n_patch_size 96   --pre_train TSCNN_Lx2.pth --b_test_only True --s_train_dataset div2k.DIV2K --s_eval_dataset mcm.Mcm+kodak.Kodak
     #-------------TSCNN_L_x3 
-    --s_model TSCNN.RDSRN  --RDNconfig A --n_patch_size 144  --pre_train TSCNN_Lx3.pth --b_test_only True --s_train_dataset div2k.DIV2K --s_eval_dataset mcm.Mcm+kodak.Kodak
+    python main.py --s_model TSCNN.RDSRN  --RDNconfig A --n_patch_size 144  --pre_train TSCNN_Lx3.pth --b_test_only True --s_train_dataset div2k.DIV2K --s_eval_dataset mcm.Mcm+kodak.Kodak
     #-------------TSCNN_L_x4 
-    --s_model TSCNN.RDSRN  --RDNconfig A --n_patch_size 192  --pre_train TSCNN_Lx4.pth --b_test_only True --s_train_dataset div2k.DIV2K --s_eval_dataset mcm.Mcm+kodak.Kodak
+    python main.py --s_model TSCNN.RDSRN  --RDNconfig A --n_patch_size 192  --pre_train TSCNN_Lx4.pth --b_test_only True --s_train_dataset div2k.DIV2K --s_eval_dataset mcm.Mcm+kodak.Kodak
     #-------------TSCNN_H_x2 
-    --s_model TSCNN.RDSRN  --RDNconfig B --n_patch_size 96   --pre_train TSCNN_Hx2.pth --b_test_only True --s_train_dataset div2k.DIV2K --s_eval_dataset mcm.Mcm+kodak.Kodak
+    python main.py --s_model TSCNN.RDSRN  --RDNconfig B --n_patch_size 96   --pre_train TSCNN_Hx2.pth --b_test_only True --s_train_dataset div2k.DIV2K --s_eval_dataset mcm.Mcm+kodak.Kodak
     #-------------TSCNN_H_x3
-    --s_model TSCNN.RDSRN  --RDNconfig B --n_patch_size 144  --pre_train TSCNN_Hx3.pth --b_test_only True --s_train_dataset div2k.DIV2K --s_eval_dataset mcm.Mcm+kodak.Kodak
+    python main.py --s_model TSCNN.RDSRN  --RDNconfig B --n_patch_size 144  --pre_train TSCNN_Hx3.pth --b_test_only True --s_train_dataset div2k.DIV2K --s_eval_dataset mcm.Mcm+kodak.Kodak
     #-------------TSCNN_H_x4
-    --s_model TSCNN.RDSRN  --RDNconfig B --n_patch_size 192  --pre_train TSCNN_Hx4.pth --b_test_only True --s_train_dataset div2k.DIV2K --s_eval_dataset mcm.Mcm+kodak.Kodak
+    python main.py --s_model TSCNN.RDSRN  --RDNconfig B --n_patch_size 192  --pre_train TSCNN_Hx4.pth --b_test_only True --s_train_dataset div2k.DIV2K --s_eval_dataset mcm.Mcm+kodak.Kodak
 
     ```
 
